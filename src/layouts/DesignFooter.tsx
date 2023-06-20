@@ -6,7 +6,7 @@ import SocialIcon from '@mui/icons-material/Language';
 
 export default function DesignFooter() {
   return (
-    <div className="footer">
+    <div className="footer animate-fade animate-duration-100">
         <Hidden mdDown>
           <div className='first w-1/3'>
             <h1>CLIENT DESIGN DEMO</h1>
@@ -53,7 +53,8 @@ export default function DesignFooter() {
             border-radius: 99px;
             box-shadow: inset 0 0 28px #00FFE6;
             background: black;
-            transform: translate(50%,-50%);
+            transform: scale(0);
+            animation: popup .5s 1s forwards;
           }
 
           .footer .second h1 {
